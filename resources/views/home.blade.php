@@ -8,7 +8,7 @@
 
             @include('top_bar')
 
-            <!-- no notes available -->
+            <!-- Sem notas disponíveis -->
              @if(count($notes) == 0)
             <div class="row mt-5">
                 <div class="col text-center">
@@ -19,11 +19,9 @@
                 </div>
             </div>
 
-            <!-- temp -->
-            <hr class="my-5">
             @else
 
-            <!-- notes are available -->
+            <!-- Notas disponíveis -->
             <div class="d-flex justify-content-end mb-3">
                 <a href="{{ route('new-note') }}" class="btn btn-secondary px-3">
                     <i class="fa-regular fa-pen-to-square me-2"></i>Nova Nota
